@@ -347,5 +347,88 @@
       }
     ],
     "createdAt": "2025-07-07T04:35:24.579Z"
+  },
+  {
+    "id": "f60c9820-1f0a-474e-88e1-0312cc60d39f",
+    "userId": "42a0d8ba-8d37-474e-bd4d-e39897d8a6f0",
+    "symptoms": [
+      {
+        "id": "G01",
+        "name": "Demam tinggi",
+        "description": "Suhu tubuh di atas 38°C"
+      },
+      {
+        "id": "G02",
+        "name": "Sakit tenggorokan",
+        "description": "Nyeri saat menelan"
+      },
+      {
+        "id": "G03",
+        "name": "Batuk kering",
+        "description": "Batuk tanpa dahak"
+      }
+    ],
+    "results": [
+      {
+        "disease": {
+          "id": "D001",
+          "name": "Flu",
+          "description": "Infeksi virus yang menyerang sistem pernapasan",
+          "recommendation": "Istirahat cukup, minum air hangat, konsumsi vitamin C"
+        },
+        "confidence": 0.85,
+        "matchPercentage": 1,
+        "matchedSymptoms": [
+          "G01",
+          "G02",
+          "G03"
+        ],
+        "ruleId": "R001"
+      },
+      {
+        "disease": {
+          "id": "D004",
+          "name": "Pneumonia",
+          "description": "Infeksi yang menyebabkan peradangan pada paru-paru",
+          "recommendation": "Segera ke rumah sakit untuk penanganan medis"
+        },
+        "confidence": 0.5666666666666667,
+        "matchPercentage": 0.6666666666666666,
+        "matchedSymptoms": [
+          "G01",
+          "G03"
+        ],
+        "ruleId": "R004"
+      },
+      {
+        "disease": {
+          "id": "D002",
+          "name": "Demam Berdarah",
+          "description": "Penyakit yang disebabkan oleh virus dengue",
+          "recommendation": "Segera konsultasi ke dokter, perbanyak minum air putih"
+        },
+        "confidence": 0.26666666666666666,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G01"
+        ],
+        "ruleId": "R002"
+      },
+      {
+        "disease": {
+          "id": "D001",
+          "name": "Flu",
+          "description": "Infeksi virus yang menyerang sistem pernapasan",
+          "recommendation": "Istirahat cukup, minum air hangat, konsumsi vitamin C"
+        },
+        "confidence": 0.2333333333333333,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G02"
+        ],
+        "ruleId": "R005"
+      }
+    ],
+    "createdAt": "2025-07-14T03:23:53.775Z"
   }
 ]
