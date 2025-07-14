@@ -152,7 +152,88 @@ const AdminArticles: React.FC = () => {
       </div>
 
       {/* Articles Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-300">
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <tr>
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
+                  ID
+                </th>
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
+                  Judul Artikel
+                </th>
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
+                  Konten
+                </th>
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
+                  Tags
+                </th>
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
+                  Tanggal
+                </th>
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
+                  Aksi
+                </th>
+              </tr>
+            </thead>
+            <tbody className="bg-white">
+              {filteredArticles.map((article) => (
+                <tr key={article.id} className="hover:bg-gray-50">
+                  <td className="px-4 py-2 text-center text-sm text-black border border-gray-400 font-medium">
+                    {article.id}
+                  </td>
+                  <td className="px-4 py-2 text-left text-sm text-black border border-gray-400 max-w-xs">
+                    {article.title}
+                  </td>
+                  <td className="px-4 py-2 text-left text-sm text-black border border-gray-400 max-w-xs">
+                    {article.content.substring(0, 100)}...
+                  </td>
+                  <td className="px-4 py-2 text-center text-sm text-black border border-gray-400">
+                    <div className="flex flex-wrap gap-1 justify-center">
+                      {article.tags.slice(0, 2).map((tag, index) => (
+                        <span
+                          key={index}
+                          className="bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full text-xs border"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                      {article.tags.length > 2 && (
+                        <span className="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs border">
+                          +{article.tags.length - 2}
+                        </span>
+                      )}
+                    </div>
+                  </td>
+                  <td className="px-4 py-2 text-center text-sm text-black border border-gray-400">
+                    {formatDate(article.createdAt)}
+                  </td>
+                  <td className="px-4 py-2 text-center border border-gray-400">
+                    <div className="flex items-center space-x-2 justify-center">
+                      <button
+                        onClick={() => handleEdit(article)}
+                        className="text-blue-600 hover:text-blue-800"
+                      >
+                        <Edit className="h-4 w-4" />
+                      </button>
+                      <button
+                        onClick={() => handleDelete(article.id)}
+                        className="text-red-600 hover:text-red-800"
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Original Grid View (Hidden) */}
+      <div className="hidden grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredArticles.map((article) => (
           <div key={article.id} className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="p-6">

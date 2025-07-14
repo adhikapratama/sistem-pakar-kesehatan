@@ -117,38 +117,38 @@ const AdminSymptoms: React.FC = () => {
       </div>
 
       {/* Symptoms Table */}
-      <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-300">
         <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead className="bg-gray-50">
+          <table className="w-full border-collapse">
+            <thead>
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
                   ID
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
                   Nama Gejala
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
                   Deskripsi
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
                   Aksi
                 </th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
+            <tbody className="bg-white">
               {filteredSymptoms.map((symptom) => (
                 <tr key={symptom.id} className="hover:bg-gray-50">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <td className="px-4 py-2 text-center text-sm text-black border border-gray-400 font-medium">
                     {symptom.id}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                  <td className="px-4 py-2 text-left text-sm text-black border border-gray-400">
                     {symptom.name}
                   </td>
-                  <td className="px-6 py-4 text-sm text-gray-900">
+                  <td className="px-4 py-2 text-left text-sm text-black border border-gray-400">
                     {symptom.description}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td className="px-4 py-2 text-center border border-gray-400">
                     <div className="flex items-center space-x-2">
                       <button
                         onClick={() => handleEdit(symptom)}

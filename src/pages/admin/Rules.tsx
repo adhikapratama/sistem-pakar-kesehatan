@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { Settings, Plus, Edit, Trash2, Search } from 'lucide-react';
+import RuleMatrix from '../../components/RuleMatrix';
 
 interface Rule {
   id: string;
@@ -183,62 +184,68 @@ const AdminRules: React.FC = () => {
         </button>
       </div>
 
+      {/* Rule Matrix */}
+      <RuleMatrix />
+
       {/* Rules Table */}
-      <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-300">
+        <div className="p-4">
+          <h3 className="text-lg font-bold text-center mb-4">Tabel Rule/Keputusan</h3>
+        </div>
         <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead className="bg-gray-50">
+          <table className="w-full border-collapse">
+            <thead>
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
                   ID
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
                   Jika (Gejala)
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
                   Maka (Penyakit)
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
                   Confidence
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
                   Deskripsi
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 py-2 text-center text-sm font-bold text-black border border-gray-400 bg-gray-100">
                   Aksi
                 </th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
+            <tbody className="bg-white">
               {filteredRules.map((rule) => (
                 <tr key={rule.id} className="hover:bg-gray-50">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <td className="px-4 py-2 text-center text-sm text-black border border-gray-400 font-medium">
                     {rule.id}
                   </td>
-                  <td className="px-6 py-4 text-sm text-gray-900">
+                  <td className="px-4 py-2 text-left text-sm text-black border border-gray-400">
                     <div className="flex flex-wrap gap-1">
                       {rule.if.map((symptomId) => (
                         <span
                           key={symptomId}
-                          className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs"
+                          className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs border"
                         >
                           {getSymptomName(symptomId)}
                         </span>
                       ))}
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                    <span className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">
+                  <td className="px-4 py-2 text-center text-sm text-black border border-gray-400">
+                    <span className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs border">
                       {getDiseaseName(rule.then)}
                     </span>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                  <td className="px-4 py-2 text-center text-sm text-black border border-gray-400">
                     {(rule.confidence * 100).toFixed(0)}%
                   </td>
-                  <td className="px-6 py-4 text-sm text-gray-900 max-w-xs truncate">
+                  <td className="px-4 py-2 text-left text-sm text-black border border-gray-400 max-w-xs">
                     {rule.description}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td className="px-4 py-2 text-center border border-gray-400">
                     <div className="flex items-center space-x-2">
                       <button
                         onClick={() => handleEdit(rule)}
