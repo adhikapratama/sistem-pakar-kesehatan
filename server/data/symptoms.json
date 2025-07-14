@@ -1,0 +1,52 @@
+[
+  {
+    "id": "G01",
+    "name": "Demam tinggi",
+    "description": "Suhu tubuh di atas 38°C"
+  },
+  {
+    "id": "G02",
+    "name": "Sakit tenggorokan",
+    "description": "Nyeri saat menelan"
+  },
+  {
+    "id": "G03",
+    "name": "Batuk kering",
+    "description": "Batuk tanpa dahak"
+  },
+  {
+    "id": "G04",
+    "name": "Pilek",
+    "description": "Hidung tersumbat atau berair"
+  },
+  {
+    "id": "G05",
+    "name": "Sakit kepala",
+    "description": "Nyeri di area kepala"
+  },
+  {
+    "id": "G06",
+    "name": "Nyeri otot",
+    "description": "Pegal-pegal di seluruh tubuh"
+  },
+  {
+    "id": "G07",
+    "name": "Mual",
+    "description": "Rasa ingin muntah"
+  },
+  {
+    "id": "G08",
+    "name": "Muntah",
+    "description": "Mengeluarkan isi perut"
+  },
+  {
+    "id": "G09",
+    "name": "Diare",
+    "description": "Buang air besar encer"
+  },
+  {
+    "id": "G10",
+    "name": "Sesak napas",
+    "description": "Kesulitan bernapas"
+  }
+]

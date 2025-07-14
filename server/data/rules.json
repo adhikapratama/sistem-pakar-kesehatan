@@ -1,0 +1,57 @@
+[
+  {
+    "id": "R001",
+    "if": [
+      "G01",
+      "G02",
+      "G03"
+    ],
+    "then": "D001",
+    "confidence": 0.85,
+    "description": "Demam tinggi + sakit tenggorokan + batuk kering = Flu"
+  },
+  {
+    "id": "R002",
+    "if": [
+      "G01",
+      "G05",
+      "G06"
+    ],
+    "then": "D002",
+    "confidence": 0.8,
+    "description": "Demam tinggi + sakit kepala + nyeri otot = Demam Berdarah"
+  },
+  {
+    "id": "R003",
+    "if": [
+      "G07",
+      "G08",
+      "G09"
+    ],
+    "then": "D003",
+    "confidence": 0.9,
+    "description": "Mual + muntah + diare = Gastroenteritis"
+  },
+  {
+    "id": "R004",
+    "if": [
+      "G01",
+      "G03",
+      "G10"
+    ],
+    "then": "D004",
+    "confidence": 0.85,
+    "description": "Demam tinggi + batuk kering + sesak napas = Pneumonia"
+  },
+  {
+    "id": "R005",
+    "if": [
+      "G02",
+      "G04",
+      "G05"
+    ],
+    "then": "D001",
+    "confidence": 0.7,
+    "description": "Sakit tenggorokan + pilek + sakit kepala = Flu"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "42a0d8ba-8d37-474e-bd4d-e39897d8a6f0",
+    "username": "admin",
+    "email": "admin@gmail.com",
+    "password": "$2a$12$of3kyLi0AbQ.9XQBNjGIE.Bwu3hLQ.RKJV7dGE4GFfLNUjGzSCaUi",
+    "role": "admin",
+    "createdAt": "2025-07-07T05:33:17.246Z"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "A001",
+    "title": "Cara Mencegah Penyakit Flu",
+    "content": "Flu adalah penyakit yang dapat dicegah dengan menjaga kebersihan...",
+    "tags": [
+      "flu",
+      "pencegahan",
+      "kesehatan"
+    ],
+    "createdAt": "2025-07-07T04:19:22.850Z"
+  },
+  {
+    "id": "A002",
+    "title": "Mengenal Gejala Demam Berdarah",
+    "content": "Demam berdarah adalah penyakit yang disebabkan oleh virus dengue...",
+    "tags": [
+      "demam berdarah",
+      "gejala",
+      "virus"
+    ],
+    "createdAt": "2025-07-07T04:19:22.850Z"
+  }
+]

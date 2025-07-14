@@ -1,0 +1,351 @@
+[
+  {
+    "id": "51b9309c-39ac-4ea1-8cac-4b47c83531ba",
+    "userId": "a55fc410-bcf6-4fe9-930a-7e81faceec09",
+    "symptoms": [
+      {
+        "id": "G04",
+        "name": "Pilek",
+        "description": "Hidung tersumbat atau berair"
+      },
+      {
+        "id": "G05",
+        "name": "Sakit kepala",
+        "description": "Nyeri di area kepala"
+      },
+      {
+        "id": "G08",
+        "name": "Muntah",
+        "description": "Mengeluarkan isi perut"
+      }
+    ],
+    "results": [
+      {
+        "disease": {
+          "id": "D001",
+          "name": "Flu",
+          "description": "Infeksi virus yang menyerang sistem pernapasan",
+          "recommendation": "Istirahat cukup, minum air hangat, konsumsi vitamin C"
+        },
+        "confidence": 0.4666666666666666,
+        "matchPercentage": 0.6666666666666666,
+        "matchedSymptoms": [
+          "G04",
+          "G05"
+        ],
+        "ruleId": "R005"
+      },
+      {
+        "disease": {
+          "id": "D003",
+          "name": "Gastroenteritis",
+          "description": "Peradangan pada saluran pencernaan",
+          "recommendation": "Konsumsi makanan lunak, hindari makanan pedas"
+        },
+        "confidence": 0.3,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G08"
+        ],
+        "ruleId": "R003"
+      },
+      {
+        "disease": {
+          "id": "D002",
+          "name": "Demam Berdarah",
+          "description": "Penyakit yang disebabkan oleh virus dengue",
+          "recommendation": "Segera konsultasi ke dokter, perbanyak minum air putih"
+        },
+        "confidence": 0.26666666666666666,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G05"
+        ],
+        "ruleId": "R002"
+      }
+    ],
+    "createdAt": "2025-07-07T04:25:08.750Z"
+  },
+  {
+    "id": "4af8a465-763f-4e36-9a06-41b8878b17a4",
+    "userId": "31071bd5-4591-4661-b360-11a0f4a7ac31",
+    "symptoms": [
+      {
+        "id": "G01",
+        "name": "Demam tinggi",
+        "description": "Suhu tubuh di atas 38°C"
+      },
+      {
+        "id": "G04",
+        "name": "Pilek",
+        "description": "Hidung tersumbat atau berair"
+      },
+      {
+        "id": "G06",
+        "name": "Nyeri otot",
+        "description": "Pegal-pegal di seluruh tubuh"
+      },
+      {
+        "id": "G08",
+        "name": "Muntah",
+        "description": "Mengeluarkan isi perut"
+      },
+      {
+        "id": "G10",
+        "name": "Sesak napas",
+        "description": "Kesulitan bernapas"
+      }
+    ],
+    "results": [
+      {
+        "disease": {
+          "id": "D004",
+          "name": "Pneumonia",
+          "description": "Infeksi yang menyebabkan peradangan pada paru-paru",
+          "recommendation": "Segera ke rumah sakit untuk penanganan medis"
+        },
+        "confidence": 0.5666666666666667,
+        "matchPercentage": 0.6666666666666666,
+        "matchedSymptoms": [
+          "G01",
+          "G10"
+        ],
+        "ruleId": "R004"
+      },
+      {
+        "disease": {
+          "id": "D002",
+          "name": "Demam Berdarah",
+          "description": "Penyakit yang disebabkan oleh virus dengue",
+          "recommendation": "Segera konsultasi ke dokter, perbanyak minum air putih"
+        },
+        "confidence": 0.5333333333333333,
+        "matchPercentage": 0.6666666666666666,
+        "matchedSymptoms": [
+          "G01",
+          "G06"
+        ],
+        "ruleId": "R002"
+      },
+      {
+        "disease": {
+          "id": "D003",
+          "name": "Gastroenteritis",
+          "description": "Peradangan pada saluran pencernaan",
+          "recommendation": "Konsumsi makanan lunak, hindari makanan pedas"
+        },
+        "confidence": 0.3,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G08"
+        ],
+        "ruleId": "R003"
+      },
+      {
+        "disease": {
+          "id": "D001",
+          "name": "Flu",
+          "description": "Infeksi virus yang menyerang sistem pernapasan",
+          "recommendation": "Istirahat cukup, minum air hangat, konsumsi vitamin C"
+        },
+        "confidence": 0.2833333333333333,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G01"
+        ],
+        "ruleId": "R001"
+      },
+      {
+        "disease": {
+          "id": "D001",
+          "name": "Flu",
+          "description": "Infeksi virus yang menyerang sistem pernapasan",
+          "recommendation": "Istirahat cukup, minum air hangat, konsumsi vitamin C"
+        },
+        "confidence": 0.2333333333333333,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G04"
+        ],
+        "ruleId": "R005"
+      }
+    ],
+    "createdAt": "2025-07-07T04:31:18.113Z"
+  },
+  {
+    "id": "2b96b2cf-216d-4ee5-98ea-a609379ee467",
+    "userId": "31071bd5-4591-4661-b360-11a0f4a7ac31",
+    "symptoms": [
+      {
+        "id": "G01",
+        "name": "Demam tinggi",
+        "description": "Suhu tubuh di atas 38°C"
+      },
+      {
+        "id": "G04",
+        "name": "Pilek",
+        "description": "Hidung tersumbat atau berair"
+      }
+    ],
+    "results": [
+      {
+        "disease": {
+          "id": "D001",
+          "name": "Flu",
+          "description": "Infeksi virus yang menyerang sistem pernapasan",
+          "recommendation": "Istirahat cukup, minum air hangat, konsumsi vitamin C"
+        },
+        "confidence": 0.2833333333333333,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G01"
+        ],
+        "ruleId": "R001"
+      },
+      {
+        "disease": {
+          "id": "D004",
+          "name": "Pneumonia",
+          "description": "Infeksi yang menyebabkan peradangan pada paru-paru",
+          "recommendation": "Segera ke rumah sakit untuk penanganan medis"
+        },
+        "confidence": 0.2833333333333333,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G01"
+        ],
+        "ruleId": "R004"
+      },
+      {
+        "disease": {
+          "id": "D002",
+          "name": "Demam Berdarah",
+          "description": "Penyakit yang disebabkan oleh virus dengue",
+          "recommendation": "Segera konsultasi ke dokter, perbanyak minum air putih"
+        },
+        "confidence": 0.26666666666666666,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G01"
+        ],
+        "ruleId": "R002"
+      },
+      {
+        "disease": {
+          "id": "D001",
+          "name": "Flu",
+          "description": "Infeksi virus yang menyerang sistem pernapasan",
+          "recommendation": "Istirahat cukup, minum air hangat, konsumsi vitamin C"
+        },
+        "confidence": 0.2333333333333333,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G04"
+        ],
+        "ruleId": "R005"
+      }
+    ],
+    "createdAt": "2025-07-07T04:35:13.006Z"
+  },
+  {
+    "id": "e32c7acc-9f71-4316-8d7c-fcf492419cbb",
+    "userId": "31071bd5-4591-4661-b360-11a0f4a7ac31",
+    "symptoms": [
+      {
+        "id": "G01",
+        "name": "Demam tinggi",
+        "description": "Suhu tubuh di atas 38°C"
+      },
+      {
+        "id": "G04",
+        "name": "Pilek",
+        "description": "Hidung tersumbat atau berair"
+      },
+      {
+        "id": "G05",
+        "name": "Sakit kepala",
+        "description": "Nyeri di area kepala"
+      },
+      {
+        "id": "G09",
+        "name": "Diare",
+        "description": "Buang air besar encer"
+      }
+    ],
+    "results": [
+      {
+        "disease": {
+          "id": "D002",
+          "name": "Demam Berdarah",
+          "description": "Penyakit yang disebabkan oleh virus dengue",
+          "recommendation": "Segera konsultasi ke dokter, perbanyak minum air putih"
+        },
+        "confidence": 0.5333333333333333,
+        "matchPercentage": 0.6666666666666666,
+        "matchedSymptoms": [
+          "G01",
+          "G05"
+        ],
+        "ruleId": "R002"
+      },
+      {
+        "disease": {
+          "id": "D001",
+          "name": "Flu",
+          "description": "Infeksi virus yang menyerang sistem pernapasan",
+          "recommendation": "Istirahat cukup, minum air hangat, konsumsi vitamin C"
+        },
+        "confidence": 0.4666666666666666,
+        "matchPercentage": 0.6666666666666666,
+        "matchedSymptoms": [
+          "G04",
+          "G05"
+        ],
+        "ruleId": "R005"
+      },
+      {
+        "disease": {
+          "id": "D003",
+          "name": "Gastroenteritis",
+          "description": "Peradangan pada saluran pencernaan",
+          "recommendation": "Konsumsi makanan lunak, hindari makanan pedas"
+        },
+        "confidence": 0.3,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G09"
+        ],
+        "ruleId": "R003"
+      },
+      {
+        "disease": {
+          "id": "D001",
+          "name": "Flu",
+          "description": "Infeksi virus yang menyerang sistem pernapasan",
+          "recommendation": "Istirahat cukup, minum air hangat, konsumsi vitamin C"
+        },
+        "confidence": 0.2833333333333333,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G01"
+        ],
+        "ruleId": "R001"
+      },
+      {
+        "disease": {
+          "id": "D004",
+          "name": "Pneumonia",
+          "description": "Infeksi yang menyebabkan peradangan pada paru-paru",
+          "recommendation": "Segera ke rumah sakit untuk penanganan medis"
+        },
+        "confidence": 0.2833333333333333,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G01"
+        ],
+        "ruleId": "R004"
+      }
+    ],
+    "createdAt": "2025-07-07T04:35:24.579Z"
+  }
+]

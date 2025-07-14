@@ -1,0 +1,26 @@
+[
+  {
+    "id": "D001",
+    "name": "Flu",
+    "description": "Infeksi virus yang menyerang sistem pernapasan",
+    "recommendation": "Istirahat cukup, minum air hangat, konsumsi vitamin C"
+  },
+  {
+    "id": "D002",
+    "name": "Demam Berdarah",
+    "description": "Penyakit yang disebabkan oleh virus dengue",
+    "recommendation": "Segera konsultasi ke dokter, perbanyak minum air putih"
+  },
+  {
+    "id": "D003",
+    "name": "Gastroenteritis",
+    "description": "Peradangan pada saluran pencernaan",
+    "recommendation": "Konsumsi makanan lunak, hindari makanan pedas"
+  },
+  {
+    "id": "D004",
+    "name": "Pneumonia",
+    "description": "Infeksi yang menyebabkan peradangan pada paru-paru",
+    "recommendation": "Segera ke rumah sakit untuk penanganan medis"
+  }
+]
