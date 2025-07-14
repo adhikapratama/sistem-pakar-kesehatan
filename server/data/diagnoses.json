@@ -430,5 +430,86 @@
       }
     ],
     "createdAt": "2025-07-14T03:23:53.775Z"
+  },
+  {
+    "id": "97f3143b-f736-4547-a97f-117ebf4763ae",
+    "userId": "42a0d8ba-8d37-474e-bd4d-e39897d8a6f0",
+    "symptoms": [
+      {
+        "id": "G01",
+        "name": "Demam tinggi",
+        "description": "Suhu tubuh di atas 38°C"
+      },
+      {
+        "id": "G07",
+        "name": "Mual",
+        "description": "Rasa ingin muntah"
+      },
+      {
+        "id": "G09",
+        "name": "Diare",
+        "description": "Buang air besar encer"
+      }
+    ],
+    "results": [
+      {
+        "disease": {
+          "id": "D003",
+          "name": "Gastroenteritis",
+          "description": "Peradangan pada saluran pencernaan",
+          "recommendation": "Konsumsi makanan lunak, hindari makanan pedas"
+        },
+        "confidence": 0.6,
+        "matchPercentage": 0.6666666666666666,
+        "matchedSymptoms": [
+          "G07",
+          "G09"
+        ],
+        "ruleId": "R003"
+      },
+      {
+        "disease": {
+          "id": "D001",
+          "name": "Flu",
+          "description": "Infeksi virus yang menyerang sistem pernapasan",
+          "recommendation": "Istirahat cukup, minum air hangat, konsumsi vitamin C"
+        },
+        "confidence": 0.2833333333333333,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G01"
+        ],
+        "ruleId": "R001"
+      },
+      {
+        "disease": {
+          "id": "D004",
+          "name": "Pneumonia",
+          "description": "Infeksi yang menyebabkan peradangan pada paru-paru",
+          "recommendation": "Segera ke rumah sakit untuk penanganan medis"
+        },
+        "confidence": 0.2833333333333333,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G01"
+        ],
+        "ruleId": "R004"
+      },
+      {
+        "disease": {
+          "id": "D002",
+          "name": "Demam Berdarah",
+          "description": "Penyakit yang disebabkan oleh virus dengue",
+          "recommendation": "Segera konsultasi ke dokter, perbanyak minum air putih"
+        },
+        "confidence": 0.26666666666666666,
+        "matchPercentage": 0.3333333333333333,
+        "matchedSymptoms": [
+          "G01"
+        ],
+        "ruleId": "R002"
+      }
+    ],
+    "createdAt": "2025-07-14T03:24:15.378Z"
   }
 ]
